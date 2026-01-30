@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-01-29T05:23:41.878477+00:00",
+  "scraped_at": "2026-01-30T05:24:33.731136+00:00",
   "models": [
     {
       "slug": "qwen3-vl",
@@ -437,8 +437,8 @@
       "capabilities": [
         "tools"
       ],
-      "pulls": 595500,
-      "pulls_text": "595.5K \n  Downloads",
+      "pulls": 602000,
+      "pulls_text": "602K \n  Downloads",
       "blurb": "granite4 Granite 4 features improved instruction following (IF) and tool-calling capabilities, making them more effective in enterprise applications. 350m 1b 3b 17 Tags Updated 3 months ago",
       "name": "Granite 4 features improved instruction following (IF) and tool-calling capabilities, making them more effective in enterprise applications.",
       "description": "Readme Granite 4.0 models Granite 4.0 models are finetuned from their base models using a combination of open source instruction datasets with permissive license and internally collected synthetic datasets. They feature improved instruction following (IF) and tool-calling capabilities, making them more effective in enterprise applications. Please Note: the 3b, 1b, and 350m model sizes are alternative options for users when mamba-2 support is not yet optimized. Models denoted -h use the hybrid mamba-2 architecture. Parameter Sizes 350m ollama run granite4:350m 350m-h ollama run granite4:350m-h 1b ollama run granite4:1b 1b-h ollama run granite4:1b-h 3b (micro) ollama run granite4:3b ollama run granite4:micro 3b-h (micro-h) ollama run granite4:3b-h ollama run granite4:micro-h 7b-a1b-h (tiny-h) ollama run granite4:7b-a1b-h ollama run granite4:tiny-h 32b-a9b-h (small-h) ollama run granite4:32b-a9b-h ollama run granite4:small-h Supported Languages English, German, Spanish, French, Japanese, Portuguese, Arabic, Czech, Italian, Korean, Dutch, and Chinese. Users may finetune Granite 4.0 models for languages beyond these languages. Intended Use This model is designed to handle general instruction-following tasks and can be integrated into AI assistants across various domains, including business applications. Capabilities Summarization Text classification Text extraction Question-answering Retrieval Augmented Generation (RAG) Code related tasks Function-calling tasks Multilingual dialog use cases Fill-In-the-Middle (FIM) code completions Learn more Developers: Granite Team, IBM Website: Granite Docs GitHub Repository: ibm-granite/granite-4.0-language-models Release Date: October 2nd, 2025 License: Apache 2.0 Write Preview <center><img src=\"https://ollama.com/assets/library/granite3.2/90c5e567-0004-425c-a17a-1b846c2b5d3d\" data-canonical-src=\"https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png\" width=\"600\" /></center> ### Granite 4.0 models **Granite 4.0 models** are finetune",
@@ -570,8 +570,8 @@
       "capabilities": [
         "embedding"
       ],
-      "pulls": 452500,
-      "pulls_text": "452.5K \n  Downloads",
+      "pulls": 455700,
+      "pulls_text": "455.7K \n  Downloads",
       "blurb": "embeddinggemma EmbeddingGemma is a 300M parameter model from Google. 300m 5 Tags Updated 4 months ago",
       "name": "EmbeddingGemma is a 300M parameter embedding model from Google.",
       "description": "Readme This model requires Ollama v0.11.10 or later EmbeddingGemma is a 300M parameter, state-of-the-art for its size, open embedding model from Google, built from Gemma 3 (with T5Gemma initialization) and the same research and technology used to create Gemini models. EmbeddingGemma produces vector representations of text, making it well-suited for search and retrieval tasks, including classification, clustering, and semantic similarity search. This model was trained with data in 100+ spoken languages. The small size and on-device focus makes it possible to deploy in environments with limited resources such as mobile phones, laptops, or desktops, democratizing access to state of the art AI models and helping foster innovation for everyone. Benchmark Training Dataset This model was trained on a dataset of text data that includes a wide variety of sources totaling approximately 320 billion tokens. Here are the key components: Web Documents : A diverse collection of web text ensures the model is exposed to a broad range of linguistic styles, topics, and vocabulary. The training dataset includes content in over 100 languages. Code and Technical Documents : Exposing the model to code and technical documentation helps it learn the structure and patterns of programming languages and specialized scientific content, which improves its understanding of code and technical questions. Synthetic and Task-Specific Data : Synthetically training data helps to teach the model specific skills. This includes curated data for tasks like information retrieval, classification, and sentiment analysis, which helps to fine-tune its performance for common embedding applications. The combination of these diverse data sources is crucial for training a powerful multilingual embedding model that can handle a wide variety of different tasks and data formats. Reference Documentation Write Preview ![image.png](/assets/library/embeddinggemma/9a20d963-4bf1-4177-9568-ca5d53a2d14e) > This model requires",
@@ -620,8 +620,8 @@
         "embedding",
         "reasoning"
       ],
-      "pulls": 403600,
-      "pulls_text": "403.6K \n  Downloads",
+      "pulls": 421100,
+      "pulls_text": "421.1K \n  Downloads",
       "blurb": "qwen3- Building upon the foundational models of the Qwen3 series, Qwen3 provides a comprehensive range of text embeddings models in various sizes 0.6b 4b 8b 12 Tags Updated 4 months ago",
       "name": "Building upon the foundational models of the Qwen3 series, Qwen3 Embedding provides a comprehensive range of text embeddings models in various sizes",
       "description": "Readme Highlights The Qwen3 Embedding model series is specifically designed for text embedding tasks. Building upon the dense foundational models of the Qwen3 series, it provides a comprehensive range of text embeddings models in various sizes (0.6B, 4B, and 8B). This series inherits the exceptional multilingual capabilities, long-text understanding, and reasoning skills of its foundational model. The Qwen3 Embedding series represents significant advancements in multiple text embedding and ranking tasks, including text retrieval, code retrieval, text classification, text clustering, and bitext mining. Exceptional Versatility : The embedding model has achieved state-of-the-art performance across a wide range of downstream application evaluations. The 8B size embedding model ranks No.1 in the MTEB multilingual leaderboard (as of June 5, 2025, score 70.58 ). Comprehensive Flexibility : The Qwen3 Embedding series offers a full spectrum of sizes (from 0.6B to 8B) for embedding models, catering to diverse use cases that prioritize efficiency and effectiveness. Developers can seamlessly combine these two modules. Additionally, these models allow for flexible vector definitions across all dimensions, support user-defined instructions to enhance performance for specific tasks, languages, or scenarios. Multilingual Capability : The Qwen3 Embedding series offer support for over 100 languages, thanks to the multilingual capabilites of Qwen3 models. This includes various programming languages, and provides robust multilingual, cross-lingual, and code retrieval capabilities. Qwen3-Embedding-8B has the following features: Model Type: Text Embedding Supported Languages: 100+ Languages Number of Paramaters: 8B Context Length: 32k Embedding Dimension: Up to 4096, supports user-defined output dimensions ranging from 32 to 4096 For more details, including benchmark evaluation, hardware requirements, and inference performance, please refer to the model’s blog , GitHub . Write Preview <i",
@@ -719,8 +719,8 @@
         "tools",
         "vision"
       ],
-      "pulls": 325800,
-      "pulls_text": "325.8K \n  Downloads",
+      "pulls": 331000,
+      "pulls_text": "331K \n  Downloads",
       "blurb": "ministral-3 The Ministral 3 family is designed for edge deployment, capable of running on a wide range of hardware. cloud 3b 8b 14b 16 Tags Updated 1 month ago",
       "name": "The Ministral 3 family is designed for edge deployment, capable of running on a wide range of hardware.",
       "description": "Readme This model requires Ollama 0.13.1 , which is currently in pre-release. The Ministral 3 family is designed for edge deployment, capable of running on a wide range of hardware. The Ministral 3 models offer the following capabilities: Vision: Enables the model to analyze images and provide insights based on visual content, in addition to text. Multilingual: Supports dozens of languages, including English, French, Spanish, German, Italian, Portuguese, Dutch, Chinese, Japanese, Korean, Arabic. System Prompt: Maintains strong adherence and support for system prompts. Agentic: Offers best-in-class agentic capabilities with native function calling and JSON outputting. Edge-Optimized: Delivers best-in-class performance at a small scale, deployable anywhere. Apache 2.0 License: Open-source license allowing usage and modification for both commercial and non-commercial purposes. Large Context Window: Supports a 256k context window. Ministral 14B Ministral 8B Ministral 3B Write Preview <img src=\"/assets/library/ministral-3/83fa3859-d87f-492c-bd81-596cfbceeccb\" width=\"120\" /> > This model requires [Ollama 0.13.1](https://github.com/ollama/ollama/releases/tag/v0.13.1-rc1), which is currently in pre-release. The Ministral 3 family is designed for edge deployment, capable of running on a wide range of hardware. The Ministral 3 models offer the following capabilities: * Vision: Enables the model to analyze images and provide insights based on visual content, in addition to text. * Multilingual: Supports dozens of languages, including English, French, Spanish, German, Italian, Portuguese, Dutch, Chinese, Japanese, Korean, Arabic. * System Prompt: Maintains strong adherence and support for system prompts. * Agentic: Offers best-in-class agentic capabilities with native function calling and JSON outputting. * Edge-Optimized: Delivers best-in-class performance at a small scale, deployable anywhere. * Apache 2.0 License: Open-source license allowing usage and modification for both ",
@@ -841,70 +841,13 @@
       "tags_count": 16
     },
     {
-      "slug": "rnj-1",
-      "capabilities": [
-        "reasoning",
-        "tools"
-      ],
-      "pulls": 299500,
-      "pulls_text": "299.5K \n  Downloads",
-      "blurb": "rnj-1 Rnj-1 is a family of 8B parameter open-weight, dense models trained from scratch by Essential AI, optimized for code and STEM with capabilities on par with SOTA open-weight models. cloud 8b 6 Tags Updated 1 month ago",
-      "name": "Rnj-1 is a family of 8B parameter open-weight, dense models trained from scratch by Essential AI, optimized for code and STEM with capabilities on par with SOTA open-weight models.",
-      "description": "Readme This model requires Ollama 0.13.3 or later. Rnj-1 is a family of 8B parameter open-weight, dense models trained from scratch by Essential AI, optimized for code and STEM with capabilities on par with SOTA open-weight models. These models perform well across a range of programming languages and boast strong agentic capabilities (e.g., inside agentic frameworks like mini-SWE-agent), while also excelling at tool-calling. They additionally exhibit strong capabilities in math and science. Herein, rnj-1 refers to the base model, while rnj-1-instruct refers to the post-trained instruction tuned model. Highlights of abilities Code generation: Both rnj-1-instruct and rnj-1 demonstrate strong code generation abilities as measured on tasks like HumanEval+, MBPP+, BigCodeBench, and LiveCodeBench v6. Both models compete with the strongest open weight models, sometimes outperforming even larger models such as GPT OSS 20B. We measured code comprehension abilities using the task of predicting inputs given outputs and vice-versa, Crux-IO. We find our models outperform comparable baselines. For multi-lingual code generation capabilities across programming languages we measure MultiPL-E on 6 languages (C++, TypeScript, Java, JavaScript, Shell, PHP) and we find performance close to the strongest model. Agentic and Tool Use: rnj-1-instruct dominates the pack on agentic coding, one of our target abilities. SWE-bench performance is indicative of the model’s ability to tackle everyday software engineering tasks. The model is an order of magnitude stronger than comparably sized models on SWE-bench and approaches the capabilities available in much larger models. It scores 20.8% on SWE-bench Verified in bash-only mode, which is higher than Gemini 2.0 flash and Qwen2.5-Coder 32B Instruct under the same agentic framework ( leaderboard ). There is a surge of interest in developing models’ abilities to write performant code. rnj-1-instruct is able to use a profiler to iteratively improve t",
-      "variants": [
-        {
-          "tag": "rnj-1:latest",
-          "size_text": "5.1GB",
-          "size_bytes": 5476083302,
-          "context": "32K",
-          "input": "Text"
-        },
-        {
-          "tag": "rnj-1:8b",
-          "size_text": "5.1GB",
-          "size_bytes": 5476083302,
-          "context": "32K",
-          "input": "Text"
-        },
-        {
-          "tag": "rnj-1:8b-cloud",
-          "size_text": null,
-          "size_bytes": null,
-          "context": "32K",
-          "input": "Text"
-        },
-        {
-          "tag": "rnj-1:8b-instruct-q4_K_M",
-          "size_text": "5.1GB",
-          "size_bytes": 5476083302,
-          "context": "32K",
-          "input": "Text"
-        },
-        {
-          "tag": "rnj-1:8b-instruct-q8_0",
-          "size_text": "8.8GB",
-          "size_bytes": 9448928051,
-          "context": "32K",
-          "input": "Text"
-        },
-        {
-          "tag": "rnj-1:8b-instruct-fp16",
-          "size_text": "17GB",
-          "size_bytes": 18253611008,
-          "context": "32K",
-          "input": "Text"
-        }
-      ],
-      "tags_count": 6
-    },
-    {
       "slug": "deepseek-v3.1",
       "capabilities": [
         "thinking",
         "tools"
       ],
-      "pulls": 299300,
-      "pulls_text": "299.3K \n  Downloads",
+      "pulls": 301500,
+      "pulls_text": "301.5K \n  Downloads",
       "blurb": "deepseek-v3.1 DeepSeek-V3.1-Terminus is a hybrid model that supports both mode and non- mode. cloud 671b 8 Tags Updated 4 months ago",
       "name": "DeepSeek-V3.1-Terminus is a hybrid model that supports both thinking mode and non-thinking mode.",
       "description": "Readme DeepSeek-V3.1-Terminus update builds on V3.1’s strengths while addressing key user feedback: 🌐 Language consistency: fewer CN/EN mix-ups & no more random chars. 🤖 Agent upgrades: stronger Code Agent & Search Agent performance. Hybrid thinking mode : One model supports both thinking mode and non-thinking mode by changing the chat template. Smarter tool calling : Through post-training optimization, the model’s performance in tool usage and agent tasks has significantly improved. Higher thinking efficiency : DeepSeek-V3.1-Think achieves comparable answer quality to DeepSeek-R1-0528, while responding more quickly. Write Preview ![logo.svg](/assets/library/deepseek-v3.1/c3f72402-1dce-4c07-a2a1-eebabd4f4b4b) DeepSeek-V3.1-Terminus update builds on V3.1’s strengths while addressing key user feedback: * 🌐 Language consistency: fewer CN/EN mix-ups & no more random chars. * 🤖 Agent upgrades: stronger Code Agent & Search Agent performance. **Hybrid thinking mode**: One model supports both thinking mode and non-thinking mode by changing the chat template. **Smarter tool calling**: Through post-training optimization, the model's performance in tool usage and agent tasks has significantly improved. **Higher thinking efficiency**: DeepSeek-V3.1-Think achieves comparable answer quality to DeepSeek-R1-0528, while responding more quickly. Paste, drop or click to upload images (.png, .jpeg, .jpg, .svg, .gif)",
@@ -969,13 +912,70 @@
       "tags_count": 8
     },
     {
+      "slug": "rnj-1",
+      "capabilities": [
+        "reasoning",
+        "tools"
+      ],
+      "pulls": 300200,
+      "pulls_text": "300.2K \n  Downloads",
+      "blurb": "rnj-1 Rnj-1 is a family of 8B parameter open-weight, dense models trained from scratch by Essential AI, optimized for code and STEM with capabilities on par with SOTA open-weight models. cloud 8b 6 Tags Updated 1 month ago",
+      "name": "Rnj-1 is a family of 8B parameter open-weight, dense models trained from scratch by Essential AI, optimized for code and STEM with capabilities on par with SOTA open-weight models.",
+      "description": "Readme This model requires Ollama 0.13.3 or later. Rnj-1 is a family of 8B parameter open-weight, dense models trained from scratch by Essential AI, optimized for code and STEM with capabilities on par with SOTA open-weight models. These models perform well across a range of programming languages and boast strong agentic capabilities (e.g., inside agentic frameworks like mini-SWE-agent), while also excelling at tool-calling. They additionally exhibit strong capabilities in math and science. Herein, rnj-1 refers to the base model, while rnj-1-instruct refers to the post-trained instruction tuned model. Highlights of abilities Code generation: Both rnj-1-instruct and rnj-1 demonstrate strong code generation abilities as measured on tasks like HumanEval+, MBPP+, BigCodeBench, and LiveCodeBench v6. Both models compete with the strongest open weight models, sometimes outperforming even larger models such as GPT OSS 20B. We measured code comprehension abilities using the task of predicting inputs given outputs and vice-versa, Crux-IO. We find our models outperform comparable baselines. For multi-lingual code generation capabilities across programming languages we measure MultiPL-E on 6 languages (C++, TypeScript, Java, JavaScript, Shell, PHP) and we find performance close to the strongest model. Agentic and Tool Use: rnj-1-instruct dominates the pack on agentic coding, one of our target abilities. SWE-bench performance is indicative of the model’s ability to tackle everyday software engineering tasks. The model is an order of magnitude stronger than comparably sized models on SWE-bench and approaches the capabilities available in much larger models. It scores 20.8% on SWE-bench Verified in bash-only mode, which is higher than Gemini 2.0 flash and Qwen2.5-Coder 32B Instruct under the same agentic framework ( leaderboard ). There is a surge of interest in developing models’ abilities to write performant code. rnj-1-instruct is able to use a profiler to iteratively improve t",
+      "variants": [
+        {
+          "tag": "rnj-1:latest",
+          "size_text": "5.1GB",
+          "size_bytes": 5476083302,
+          "context": "32K",
+          "input": "Text"
+        },
+        {
+          "tag": "rnj-1:8b",
+          "size_text": "5.1GB",
+          "size_bytes": 5476083302,
+          "context": "32K",
+          "input": "Text"
+        },
+        {
+          "tag": "rnj-1:8b-cloud",
+          "size_text": null,
+          "size_bytes": null,
+          "context": "32K",
+          "input": "Text"
+        },
+        {
+          "tag": "rnj-1:8b-instruct-q4_K_M",
+          "size_text": "5.1GB",
+          "size_bytes": 5476083302,
+          "context": "32K",
+          "input": "Text"
+        },
+        {
+          "tag": "rnj-1:8b-instruct-q8_0",
+          "size_text": "8.8GB",
+          "size_bytes": 9448928051,
+          "context": "32K",
+          "input": "Text"
+        },
+        {
+          "tag": "rnj-1:8b-instruct-fp16",
+          "size_text": "17GB",
+          "size_bytes": 18253611008,
+          "context": "32K",
+          "input": "Text"
+        }
+      ],
+      "tags_count": 6
+    },
+    {
       "slug": "qwen3-next",
       "capabilities": [
         "thinking",
         "tools"
       ],
-      "pulls": 282000,
-      "pulls_text": "282K \n  Downloads",
+      "pulls": 287600,
+      "pulls_text": "287.6K \n  Downloads",
       "blurb": "qwen3-next The first installment in the Qwen3-Next series with strong performance in terms of both parameter efficiency and inference speed. cloud 80b 10 Tags Updated 1 month ago",
       "name": "The first installment in the Qwen3-Next series with strong performance in terms of both parameter efficiency and inference speed.",
       "description": "Readme Qwen3-Next-80B-A3B is the first installment in the Qwen3-Next series and features the following key enhancements: Hybrid Attention : Replaces standard attention with the combination of Gated DeltaNet and Gated Attention, enabling efficient context modeling for ultra-long context length. High-Sparsity Mixture-of-Experts (MoE) : Achieves an extreme low activation ratio in MoE layers, drastically reducing FLOPs per token while preserving model capacity. Stability Optimizations : Includes techniques such as zero-centered and weight-decayed layernorm, and other stabilizing enhancements for robust pre-training and post-training. Multi-Token Prediction (MTP) : Boosts pretraining model performance and accelerates inference. Write Preview ![image.png](/assets/library/qwen3-next/5e94256e-8c4a-42bb-a335-34b61221360e) Qwen3-Next-80B-A3B is the first installment in the Qwen3-Next series and features the following key enhancements: * **Hybrid Attention**: Replaces standard attention with the combination of Gated DeltaNet and Gated Attention, enabling efficient context modeling for ultra-long context length. * **High-Sparsity Mixture-of-Experts (MoE)**: Achieves an extreme low activation ratio in MoE layers, drastically reducing FLOPs per token while preserving model capacity. * **Stability Optimizations**: Includes techniques such as zero-centered and weight-decayed layernorm, and other stabilizing enhancements for robust pre-training and post-training. * **Multi-Token Prediction (MTP)**: Boosts pretraining model performance and accelerates inference. Paste, drop or click to upload images (.png, .jpeg, .jpg, .svg, .gif)",
@@ -1060,8 +1060,8 @@
         "thinking",
         "tools"
       ],
-      "pulls": 135500,
-      "pulls_text": "135.5K \n  Downloads",
+      "pulls": 136800,
+      "pulls_text": "136.8K \n  Downloads",
       "blurb": "nemotron-3-nano Nemotron 3 Nano - A new Standard for Efficient, Open, and Intelligent Agentic Models cloud 30b 6 Tags Updated 1 month ago",
       "name": "Nemotron 3 Nano - A new Standard for Efficient, Open, and Intelligent Agentic Models",
       "description": "Readme Nemotron 3 Nano 30B ollama run nemotron-3-nano:30b Ollama’s Cloud ollama run nemotron-3-nano:30b-cloud Model Dates: September 2025 - December 2025 Data Freshness: The post-training data has a cutoff date of November 28, 2025. The pre-training data has a cutoff date of June 25, 2025. What is Nemotron? NVIDIA Nemotron™ is a family of open models with open weights, training data, and recipes, delivering leading efficiency and accuracy for building specialized AI agents. Nemotron 3 Nano is a large language model (LLM) trained from scratch by NVIDIA, and designed as a unified model for both reasoning and non-reasoning tasks. It responds to user queries and tasks by first generating a reasoning trace and then concluding with a final response. The model’s reasoning capabilities can be configured through a flag in the chat template. If the user prefers the model to provide its final answer without intermediate reasoning traces, it can be configured to do so, albeit with a slight decrease in accuracy for harder prompts that require reasoning. Conversely, allowing the model to generate reasoning traces first generally results in higher-quality final solutions to queries and tasks. The model employs a hybrid Mixture-of-Experts (MoE) architecture, consisting of 23 Mamba-2 and MoE layers, along with 6 Attention layers. Each MoE layer includes 128 experts plus 1 shared expert, with 6 experts activated per token. The model has 3.5B active parameters and 30B parameters in total. The supported languages include: English, German, Spanish, French, Italian, and Japanese. Improved using Qwen. Reasoning Benchmark Evaluations Task NVIDIA-Nemotron-3-Nano-30B-A3B-BF16 Qwen3-30B-A3B-Thinking-2507 GPT-OSS-20B General Knowledge MMLU-Pro 78.3 80.9 75.0 Reasoning AIME25 (no tools) 89.1 85.0 91.7 AIME25 (with tools) 99.2 - 98.7 GPQA (no tools) 73.0 73.4 71.5 GPQA (with tools) 75.0 - 74.2 LiveCodeBench (v6 2025-08–2025-05) 68.3 66.0 61.0 SciCode (subtask) 33.3 33.0 34.0 HLE (no tools) 10.6 ",
@@ -1116,8 +1116,8 @@
       "capabilities": [
         "vision"
       ],
-      "pulls": 131400,
-      "pulls_text": "131.4K \n  Downloads",
+      "pulls": 134400,
+      "pulls_text": "134.4K \n  Downloads",
       "blurb": "deepseek-ocr DeepSeek-OCR is a -language model that can perform token-efficient OCR. 3b 3 Tags Updated 2 months ago",
       "name": "DeepSeek-OCR is a vision-language model that can perform token-efficient OCR.",
       "description": "Readme DeepSeek-OCR requires Ollama v0.13.0 or later. DeepSeek-OCR is a vision-language model that can perform token-efficient optical character recognition (OCR). Example inputs Please note, the model is sensitive to its input. For example, a missing punctuation or new line may cause an improper output. ollama run deepseek-ocr \"/path/to/image\\n<|grounding|>Given the layout of the image.\" ollama run deepseek-ocr \"/path/to/image\\nFree OCR.\" ollama run deepseek-ocr \"/path/to/image\\nParse the figure.\" ollama run deepseek-ocr \"/path/to/image\\nExtract the text in the image.\" ollama run deepseek-ocr \"/path/to/image\\n<|grounding|>Convert the document to markdown.\" Examples References Arxiv paper Write Preview <img src=\"/assets/library/deepseek-v3/069ccc94-63b0-41e6-b2b3-e8e56068ab1a\" width=\"320\" /> > DeepSeek-OCR requires [Ollama v0.13.0](https://github.com/ollama/ollama/releases) or later. DeepSeek-OCR is a vision-language model that can perform token-efficient optical character recognition (OCR). ![fig1.png](/assets/library/deepseek-ocr/e93c9353-3836-4680-a7f1-148ad3e47eff) ### Example inputs Please note, the model is sensitive to its input. For example, a missing punctuation or new line may cause an improper output. ``` ollama run deepseek-ocr \"/path/to/image\\n<|grounding|>Given the layout of the image.\" ``` ``` ollama run deepseek-ocr \"/path/to/image\\nFree OCR.\" ``` ``` ollama run deepseek-ocr \"/path/to/image\\nParse the figure.\" ``` ``` ollama run deepseek-ocr \"/path/to/image\\nExtract the text in the image.\" ``` ``` ollama run deepseek-ocr \"/path/to/image\\n<|grounding|>Convert the document to markdown.\" ``` ### Examples ![show1.jpg](/assets/library/deepseek-ocr/445a87aa-b34e-4a85-8aba-921dd54cfd86) ![show2.jpg](/assets/library/deepseek-ocr/78c11fd6-d1be-4983-a08a-5188c65fcd1f) ![show3.jpg](/assets/library/deepseek-ocr/44b2ac4a-d52e-4f77-843d-3c828e7ecaf0) ![show4.jpg](/assets/library/deepseek-ocr/39e4d41b-634e-407a-a26e-7880c0a2b137) ### References - [Arxiv paper](http",
@@ -1153,8 +1153,8 @@
         "tools",
         "vision"
       ],
-      "pulls": 117500,
-      "pulls_text": "117.5K \n  Downloads",
+      "pulls": 119200,
+      "pulls_text": "119.2K \n  Downloads",
       "blurb": "devstral-small-2 24B model that excels at using to explore codebases, editing multiple files and power software engineering agents. cloud 24b 6 Tags Updated 1 month ago",
       "name": "24B model that excels at using tools to explore codebases, editing multiple files and power software engineering agents.",
       "description": "Readme Note: this model requires Ollama 0.13.3 or later. Download Ollama Devstral Small 2 Devstral is an agentic LLM for software engineering tasks. Devstral 2 models excel at using tools to explore codebases, editing multiple files and power software engineering agents. The model achieves remarkable performance on SWE-bench. 24B model ollama run devstral-small-2 Key Features The Devstral 2 Instruct model offers the following capabilities: Agentic Coding : Devstral is designed to excel at agentic coding tasks, making it a great choice for software engineering agents. Improved Performance : Devstral 2 is a step-up compared to its predecessors. Better Generalization : Generalises better to diverse prompts and coding environments. Use Cases AI Code Assistants, Agentic Coding, and Software Engineering Tasks. Leveraging advanced AI capabilities for complex tool integration and deep codebase understanding in coding environments. Benchmark Results Model/Benchmark Size (B Tokens) SWE Bench Verified SWE Bench Multilingual Terminal Bench Devstral 2 123 72.2% 61.3% 40.5% Devstral Small 2 24 65.8% 51.6% 32.0% DeepSeek v3.2 671 73.1% 70.2% 46.4% Kimi K2 Thinking 1000 71.3% 61.1% 35.7% MiniMax M2 230 69.4% 56.5% 30.0% GLM 4.6 455 68.0% – 40.5% Qwen 3 Coder Plus 480 69.6% 54.7% 37.5% Gemini 3 Pro – 76.2% – 54.2% Claude Sonnet 4.5 – 77.2% 68.0% 42.8% GPT 5.1 Codex Max – 77.9% – 58.1% GPT 5.1 Codex High – 73.7% – 52.8% License Devstral Small 2 - 24B Apache 2.0 Reference Devstral 2 Write Preview <img src=\"/assets/library/devstral-2/22065d6d-626a-4fc8-af4c-2efe10844651\" width=\"72\" /> > Note: this model requires Ollama 0.13.3 or later. [Download Ollama](https://ollama.com/download) # Devstral Small 2 Devstral is an agentic LLM for software engineering tasks. **Devstral 2** models excel at using tools to explore codebases, editing multiple files and power software engineering agents. The model achieves remarkable performance on SWE-bench. **[24B model](https://ollama.com/library/devstra",
@@ -1210,8 +1210,8 @@
         "reasoning",
         "thinking"
       ],
-      "pulls": 108900,
-      "pulls_text": "108.9K \n  Downloads",
+      "pulls": 110000,
+      "pulls_text": "110K \n  Downloads",
       "blurb": "olmo-3 Olmo is a series of Open language models designed to enable the science of language models. These models are pre-trained on the Dolma 3 dataset and post-trained on the Dolci datasets. 7b 32b 15 Tags Updated 1 month ago",
       "name": "Olmo is a series of Open language models designed to enable the science of language models. These models are pre-trained on the Dolma 3 dataset and post-trained on the Dolci datasets.",
       "description": "Readme Olmo 3, a new family of 7B and 32B models in both Instruct and Think variants. It has long chain-of-thought thinking to improve reasoning tasks like math and coding. Olmo is a series of Open language models designed to enable the science of language models. These models are pre-trained on the Dolma 3 dataset and post-trained on the Dolci datasets. Allen AI team is releasing all code, checkpoints, logs, and associated training details. Models Olmo 3 Instruct 7B ollama run olmo-3:7b-instruct Olmo 3 Think 7B ollama run olmo-3:7b-think Olmo 3 Think 32B ollama run olmo-3:32b-think Evaluation Olmo 3 Instruct 7B Benchmark Olmo3 Instruct 7B Qwen 3 8B (no reasoning) Qwen 3 VL 8B Instruct Qwen 2.5 7B Olmo 2 7B Instruct Apertus 8B Instruct Granite 3.3 8B Instruct MATH 87.3 82.3 91.6 71 30.1 21.9 67.3 AIME 2024 44.3 26.2 55.1 11.3 1.3 0.5 7.3 AIME 2025 32.5 21.7 43.3 6.3 0.4 0.2 6.3 OMEGA 28.9 20.5 32.3 13.7 5.2 5.0 10.7 BigBenchHard 71.2 73.7 85.6 68.8 43.8 42.2 61.2 ZebraLogic 32.9 25.4 64.3 10.7 5.3 5.3 17.6 AGI Eval English 64.4 76 84.5 69.8 56.1 50.8 64.0 HumanEvalPlus 77.2 79.8 82.9 74.9 25.8 34.4 64.0 MBPP+ 60.2 64.4 66.3 62.6 40.7 42.1 54.0 LiveCodeBench v3 29.5 53.2 55.9 34.5 7.2 7.8 11.5 IFEval 85.6 86.3 87.8 73.4 72.2 71.4 77.5 IFBench 32.3 29.3 34 28.4 26.7 22.1 22.3 MMLU 69.1 80.4 83.6 77.2 61.6 62.7 63.5 PopQA 14.1 20.4 26.5 21.5 25.5 25.5 28.9 GPQA 40.4 44.6 51.1 35.6 31.3 28.8 33.0 AlpacaEval 2 LC 40.9 49.8 73.5 23 18.3 8.1 28.6 SimpleQA 79.3 79 90.3 78 – – – LitQA2 38.2 39.6 30.7 29.8 – – – BFCL 49.8 60.2 66.2 55.8 – – – Safety 87.3 78 80.2 73.4 93.1 72.2 73.7 Olmo 3 Think 7B Benchmark Olmo 3 Think 7B OpenThinker3-7B Nemotron-Nano-9B-v2 DeepSeek-R1-Distill-Qwen-7B Qwen 3 8B (reasoning) Qwen 3 VL 8B Thinker OpenReasoning Nemotron 7B MATH 95.1 94.5 94.4 87.9 95.1 95.2 94.6 AIME 2024 71.6 67.7 72.1 54.9 74.0 70.9 77.0 AIME 2025 64.6 57.2 58.9 40.2 67.8 61.5 73.1 OMEGA 37.8 38.4 42.4 28.5 43.4 38.1 43.2 BBH 86.6 77.1 86.2 73.5 84.4 86.8 81.3 ZebraLogic 66.5 ",
@@ -1325,37 +1325,12 @@
       "tags_count": 15
     },
     {
-      "slug": "gemini-3-pro-preview",
-      "capabilities": [
-        "multimodal",
-        "reasoning",
-        "thinking",
-        "tools",
-        "vision"
-      ],
-      "pulls": 92500,
-      "pulls_text": "92.5K \n  Downloads",
-      "blurb": "gemini-3-pro-preview Google's most intelligent model with SOTA and understanding, and powerful agentic and vibe coding capabilities. cloud 1 Tag Updated 2 months ago",
-      "name": "Google's most intelligent model with SOTA reasoning and multimodal understanding, and powerful agentic and vibe coding capabilities.",
-      "description": "Readme Gemini 3 Pro is the next generation in the Gemini series of models, a suite of highly-capable, natively multimodal, reasoning models. Gemini 3 Pro is now Google’s most advanced model for complex tasks, and can comprehend vast datasets, challenging problems from different information sources, including text, audio, images, video, and entire code repositories. Intended Usage: Gemini 3 Pro is Google’s most intelligent and adaptive model yet, capable of helping with real-world complexity, solving problems that require enhanced reasoning and intelligence, creativity, strategic planning and making improvements step-by-step. It is particularly well-suited for applications that require: agentic performance, advanced coding, long context and/or multimodal understanding, and/or algorithmic development. Model dependencies: This model is not a modification or a fine-tune of a prior model. Inputs: Text strings (e.g., a question, a prompt, document(s) to be summarized), images, audio, and video files, with a token context window of up to 1M. Outputs: Text, with a 64K token output. Write Preview ![logo](/assets/library/gemini-3-pro-preview/1ea5d39f-0703-4118-8cec-7e686b1c89bd) Gemini 3 Pro is the next generation in the Gemini series of models, a suite of highly-capable, natively multimodal, reasoning models. Gemini 3 Pro is now Google’s most advanced model for complex tasks, and can comprehend vast datasets, challenging problems from different information sources, including text, audio, images, video, and entire code repositories. **Intended Usage:** Gemini 3 Pro is Google's most intelligent and adaptive model yet, capable of helping with real-world complexity, solving problems that require enhanced reasoning and intelligence, creativity, strategic planning and making improvements step-by-step. It is particularly well-suited for applications that require: agentic performance, advanced coding, long context and/or multimodal understanding, and/or algorithmic development. ![ev",
-      "variants": [
-        {
-          "tag": "gemini-3-pro-preview:latest",
-          "size_text": null,
-          "size_bytes": null,
-          "context": null,
-          "input": "Text"
-        }
-      ],
-      "tags_count": 1
-    },
-    {
       "slug": "translategemma",
       "capabilities": [
         "vision"
       ],
-      "pulls": 91400,
-      "pulls_text": "91.4K \n  Downloads",
+      "pulls": 97400,
+      "pulls_text": "97.4K \n  Downloads",
       "blurb": "translategemma A new collection of open translation models built on Gemma 3, helping people communicate across 55 languages. 4b 12b 27b 13 Tags Updated 1 week ago",
       "name": "A new collection of open translation models built on Gemma 3, helping people communicate across 55 languages.",
       "description": "Readme TranslateGemma is a new collection of open translation models built on Gemma 3, available in 4B, 12B, and 27B parameter sizes. It represents a significant step forward in open translation, helping people communicate across 55 languages, no matter where they are or what device they own. Prompt Guide Prompt Format TranslateGemma expects a single user message with this structure: You are a professional {SOURCE_LANG} ({SOURCE_CODE}) to {TARGET_LANG} ({TARGET_CODE}) translator. Your goal is to accurately convey the meaning and nuances of the original {SOURCE_LANG} text while adhering to {TARGET_LANG} grammar, vocabulary, and cultural sensitivities. Produce only the {TARGET_LANG} translation, without any additional explanations or commentary. Please translate the following {SOURCE_LANG} text into {TARGET_LANG}: {TEXT} Important: There are two blank lines before the text to translate. Examples English to Spanish You are a professional English (en) to Spanish (es) translator. Your goal is to accurately convey the meaning and nuances of the original English text while adhering to Spanish grammar, vocabulary, and cultural sensitivities. Produce only the Spanish translation, without any additional explanations or commentary. Please translate the following English text into Spanish: Hello, how are you? German to English You are a professional German (de) to English (en) translator. Your goal is to accurately convey the meaning and nuances of the original German text while adhering to English grammar, vocabulary, and cultural sensitivities. Produce only the English translation, without any additional explanations or commentary. Please translate the following German text into English: Guten Morgen, wie geht es Ihnen? Japanese to French You are a professional Japanese (ja) to French (fr) translator. Your goal is to accurately convey the meaning and nuances of the original Japanese text while adhering to French grammar, vocabulary, and cultural sensitivities. Produce only th",
@@ -1455,14 +1430,39 @@
       "tags_count": 13
     },
     {
+      "slug": "gemini-3-pro-preview",
+      "capabilities": [
+        "multimodal",
+        "reasoning",
+        "thinking",
+        "tools",
+        "vision"
+      ],
+      "pulls": 93200,
+      "pulls_text": "93.2K \n  Downloads",
+      "blurb": "gemini-3-pro-preview Google's most intelligent model with SOTA and understanding, and powerful agentic and vibe coding capabilities. cloud 1 Tag Updated 2 months ago",
+      "name": "Google's most intelligent model with SOTA reasoning and multimodal understanding, and powerful agentic and vibe coding capabilities.",
+      "description": "Readme Gemini 3 Pro is the next generation in the Gemini series of models, a suite of highly-capable, natively multimodal, reasoning models. Gemini 3 Pro is now Google’s most advanced model for complex tasks, and can comprehend vast datasets, challenging problems from different information sources, including text, audio, images, video, and entire code repositories. Intended Usage: Gemini 3 Pro is Google’s most intelligent and adaptive model yet, capable of helping with real-world complexity, solving problems that require enhanced reasoning and intelligence, creativity, strategic planning and making improvements step-by-step. It is particularly well-suited for applications that require: agentic performance, advanced coding, long context and/or multimodal understanding, and/or algorithmic development. Model dependencies: This model is not a modification or a fine-tune of a prior model. Inputs: Text strings (e.g., a question, a prompt, document(s) to be summarized), images, audio, and video files, with a token context window of up to 1M. Outputs: Text, with a 64K token output. Write Preview ![logo](/assets/library/gemini-3-pro-preview/1ea5d39f-0703-4118-8cec-7e686b1c89bd) Gemini 3 Pro is the next generation in the Gemini series of models, a suite of highly-capable, natively multimodal, reasoning models. Gemini 3 Pro is now Google’s most advanced model for complex tasks, and can comprehend vast datasets, challenging problems from different information sources, including text, audio, images, video, and entire code repositories. **Intended Usage:** Gemini 3 Pro is Google's most intelligent and adaptive model yet, capable of helping with real-world complexity, solving problems that require enhanced reasoning and intelligence, creativity, strategic planning and making improvements step-by-step. It is particularly well-suited for applications that require: agentic performance, advanced coding, long context and/or multimodal understanding, and/or algorithmic development. ![ev",
+      "variants": [
+        {
+          "tag": "gemini-3-pro-preview:latest",
+          "size_text": null,
+          "size_bytes": null,
+          "context": null,
+          "input": "Text"
+        }
+      ],
+      "tags_count": 1
+    },
+    {
       "slug": "glm-4.7-flash",
       "capabilities": [
         "thinking",
         "tools"
       ],
-      "pulls": 72500,
-      "pulls_text": "72.5K \n  Downloads",
-      "blurb": "glm-4.7-flash As the strongest model in the 30B class, GLM-4.7-Flash offers a new option for lightweight deployment that balances performance and efficiency. 4 Tags Updated 4 days ago",
+      "pulls": 80400,
+      "pulls_text": "80.4K \n  Downloads",
+      "blurb": "glm-4.7-flash As the strongest model in the 30B class, GLM-4.7-Flash offers a new option for lightweight deployment that balances performance and efficiency. 4 Tags Updated 5 days ago",
       "name": "As the strongest model in the 30B class, GLM-4.7-Flash offers a new option for lightweight deployment that balances performance and efficiency.",
       "description": "Readme Note: this model requires Ollama 0.14.3 which is currently in pre-release. Introduction GLM-4.7-Flash is a 30B-A3B MoE model. As the strongest model in the 30B class, GLM-4.7-Flash offers a new option for lightweight deployment that balances performance and efficiency. Performances on Benchmarks Benchmark GLM-4.7-Flash Qwen3-30B-A3B-Thinking-2507 GPT-OSS-20B AIME 25 91.6 85.0 91.7 GPQA 75.2 73.4 71.5 LCB v6 64.0 66.0 61.0 HLE 14.4 9.8 10.9 SWE-bench Verified 59.2 22.0 34.0 τ²-Bench 79.5 49.0 47.7 BrowseComp 42.8 2.29 28.3 Write Preview <img src=\"/assets/library/glm-4.7-flash/8e1f3c2e-cfb1-4516-a57c-312b7daac14a\" width=\"128\" /> > Note: this model requires [Ollama 0.14.3](https://github.com/ollama/ollama/releases) which is currently in pre-release. ## Introduction GLM-4.7-Flash is a 30B-A3B MoE model. As the strongest model in the 30B class, GLM-4.7-Flash offers a new option for lightweight deployment that balances performance and efficiency. ### Performances on Benchmarks | Benchmark | GLM-4.7-Flash | Qwen3-30B-A3B-Thinking-2507 | GPT-OSS-20B | |--------------------|---------------|-----------------------------|-------------| | AIME 25 | 91.6 | 85.0 | 91.7 | | GPQA | 75.2 | 73.4 | 71.5 | | LCB v6 | 64.0 | 66.0 | 61.0 | | HLE | 14.4 | 9.8 | 10.9 | | SWE-bench Verified | 59.2 | 22.0 | 34.0 | | τ²-Bench | 79.5 | 49.0 | 47.7 | | BrowseComp | 42.8 | 2.29 | 28.3 | Paste, drop or click to upload images (.png, .jpeg, .jpg, .svg, .gif)",
       "variants": [
@@ -1504,8 +1504,8 @@
         "thinking",
         "tools"
       ],
-      "pulls": 64599,
-      "pulls_text": "64.6K \n  Downloads",
+      "pulls": 65400,
+      "pulls_text": "65.4K \n  Downloads",
       "blurb": "olmo-3.1 Olmo is a series of Open language models designed to enable the science of language models. These models are pre-trained on the Dolma 3 dataset and post-trained on the Dolci datasets. 32b 10 Tags Updated 1 month ago",
       "name": "Olmo is a series of Open language models designed to enable the science of language models. These models are pre-trained on the Dolma 3 dataset and post-trained on the Dolci datasets.",
       "description": "Readme Olmo 3.1 models are available either as a 32B parameter thinking or instruct model. It has long chain-of-thought thinking to improve reasoning tasks like math and coding. Olmo is a series of Open language models designed to enable the science of language models. These models are pre-trained on the Dolma 3 dataset and post-trained on the Dolci datasets. Allen AI team is releasing all code, checkpoints, logs, and associated training details. Models Olmo 3.1 Instruct 32B ollama run olmo-3.1:32b-instruct Olmo 3.1 Think 32B ollama run olmo-3.1:32b-think Benchmark Benchmark Olmo 3.1 32B Think Olmo 3 Think 32B Qwen 3 32B Qwen 3 VL 32B Thinking Qwen 2.5 32B Gemma 3 27B Instruct Gemma 2 27B Instruct Olmo 2 32B Instruct DeepSeek-R1-Distill-Qwen-32B Math MATH 96.2 96.1 95.4 96.7 80.2 87.4 51.5 49.2 92.6 AIME 2024 80.6 76.8 80.8 86.3 15.7 28.9 4.7 4.6 70.3 AIME 2025 78.1 72.5 70.9 78.8 13.4 22.9 0.9 0.9 56.3 OMEGA 53.4 50.8 47.7 50.8 19.2 24.0 9.1 9.8 38.9 Reasoning BigBenchHard 88.6 89.8 90.6 91.1 80.9 82.4 66.0 65.6 89.7 ZebraLogic 80.1 76.0 88.3 96.1 24.1 24.8 17.2 13.3 69.4 AGI Eval English 89.2 88.2 90.0 92.2 78.9 76.9 70.9 68.4 88.1 Coding HumanEvalPlus 91.5 91.4 91.2 90.6 82.6 79.2 67.5 44.4 92.3 MBPP+ 68.3 68.0 70.6 66.2 66.6 65.7 61.2 49.0 70.1 LiveCodeBench v3 83.3 83.5 90.2 84.8 49.9 39.0 28.7 10.6 79.5 IF IFEval 93.8 89.0 86.5 85.5 81.9 85.4 62.1 85.8 78.7 IFBench 68.1 47.6 37.3 55.1 36.7 31.3 27.8 36.4 23.8 Knowledge & QA MMLU 86.4 85.4 88.8 90.1 84.6 74.6 76.1 77.1 88.0 PopQA 30.9 31.9 30.7 32.2 28.0 30.2 30.4 37.2 26.7 GPQA 57.5 58.1 67.3 67.4 44.6 45.0 39.9 36.4 61.8 Chat AlpacaEval 2 LC 69.1 74.2 75.6 80.9 81.9 65.5 39.8 38.0 26.2 Safety 83.6 68.8 69.0 82.7 81.9 68.6 74.3 83.8 63.6 Write Preview ![Olmo3.png](/assets/library/olmo-3.1/8d27e58b-a05f-4ffd-94d2-cd61a48e7303) Olmo 3.1 models are available either as a 32B parameter thinking or instruct model. It has long chain-of-thought thinking to improve reasoning tasks like math and coding. Olmo is a series",
@@ -1589,8 +1589,8 @@
         "thinking",
         "tools"
       ],
-      "pulls": 59800,
-      "pulls_text": "59.8K \n  Downloads",
+      "pulls": 60400,
+      "pulls_text": "60.4K \n  Downloads",
       "blurb": "devstral-2 123B model that excels at using to explore codebases, editing multiple files and power software engineering agents. cloud 123b 6 Tags Updated 1 month ago",
       "name": "123B model that excels at using tools to explore codebases, editing multiple files and power software engineering agents.",
       "description": "Readme Devstral 2 Devstral is an agentic LLM for software engineering tasks. Devstral 2 excels at using tools to explore codebases, editing multiple files and power software engineering agents. The model achieves remarkable performance on SWE-bench. 123B model ollama run devstral-2 Ollama’s Cloud ollama run devstral-2:123b-cloud Key Features The Devstral 2 Instruct model offers the following capabilities: Agentic Coding : Devstral is designed to excel at agentic coding tasks, making it a great choice for software engineering agents. Improved Performance : Devstral 2 is a step-up compared to its predecessors. Better Generalization : Generalises better to diverse prompts and coding environments. Use Cases AI Code Assistants, Agentic Coding, and Software Engineering Tasks. Leveraging advanced AI capabilities for complex tool integration and deep codebase understanding in coding environments. Benchmark Results Model/Benchmark Size (B Tokens) SWE Bench Verified SWE Bench Multilingual Terminal Bench Devstral 2 123 72.2% 61.3% 40.5% Devstral Small 2 24 65.8% 51.6% 32.0% DeepSeek v3.2 671 73.1% 70.2% 46.4% Kimi K2 Thinking 1000 71.3% 61.1% 35.7% MiniMax M2 230 69.4% 56.5% 30.0% GLM 4.6 455 68.0% – 40.5% Qwen 3 Coder Plus 480 69.6% 54.7% 37.5% Gemini 3 Pro – 76.2% – 54.2% Claude Sonnet 4.5 – 77.2% 68.0% 42.8% GPT 5.1 Codex Max – 77.9% – 58.1% GPT 5.1 Codex High – 73.7% – 52.8% License Devstral 2 - 123B Modified MIT License Attribution notice: 2025 - Mistral AI Permission is hereby granted, free of charge, to any person obtaining a copy of the weights of this model and associated documentation files (the “Model”), to deal in the Model without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Model, and to permit persons to whom the Model is furnished to do so, subject to the following conditions: The above attribution notice and this permission notice shall be included in all copies or ",
@@ -1645,8 +1645,8 @@
       "capabilities": [
         "tools"
       ],
-      "pulls": 51100,
-      "pulls_text": "51.1K \n  Downloads",
+      "pulls": 51700,
+      "pulls_text": "51.7K \n  Downloads",
       "blurb": "functiongemma FunctionGemma is a specialized version of Google's Gemma 3 270M model fine-tuned explicitly for function calling. 270m 4 Tags Updated 1 month ago",
       "name": "FunctionGemma is a specialized version of Google's Gemma 3 270M model fine-tuned explicitly for function calling.",
       "description": "Readme Requires Ollama v0.13.5 or later FunctionGemma FunctionGemma is a lightweight, open model from Google, built as a foundation for creating your own specialized function calling models. The model is well suited for text-only function calling. The uniquely small size makes it possible to deploy in environments with limited resources such as laptops, desktops or your own cloud infrastructure, democratizing access to state of the art AI models and helping foster innovation for everyone. FunctionGemma is not intended for use as a direct dialogue model, and is designed to be highly performant after further fine-tuning, as is typical of models this size. Built on the Gemma 3 270M model and with the same research and technology used to create the Gemini models, FunctionGemma has been trained specifically for function calling. The model has the same architecture as Gemma 3, but uses a different chat format. Furthermore, akin to the base Gemma 270M, the model has been optimized to be extremely versatile, performant on a variety of hardware in single turn scenarios, but should be finetuned on single turn or multiturn task specific data to achieve best accuracy in specific domains. Examples Python Run the python example with uv run tool.py # /// script # requires-python = \">=3.11\" # dependencies = [ # \"ollama\", # \"rich\", # ] # /// \"\"\" Single tool, single turn example. Run with: uv run tool.py \"\"\" import json from rich import print from ollama import chat model = 'functiongemma' def get_weather(city: str) -> str: \"\"\" Get the current weather for a city. Args: city: The name of the city Returns: A string describing the weather \"\"\" return json.dumps({'city': city, 'temperature': 22, 'unit': 'celsius', 'condition': 'sunny'}) messages = [{'role': 'user', 'content': 'What is the weather in Paris?'}] print('Prompt:', messages[0]['content']) response = chat(model, messages=messages, tools=[get_weather]) if response.message.tool_calls: tool = response.message.tool_calls[0] print(f'",
@@ -1687,8 +1687,8 @@
       "capabilities": [
         "thinking"
       ],
-      "pulls": 14500,
-      "pulls_text": "14.5K \n  Downloads",
+      "pulls": 17400,
+      "pulls_text": "17.4K \n  Downloads",
       "blurb": "lfm2.5-thinking LFM2.5 is a new family of hybrid models designed for on-device deployment. 1.2b 5 Tags Updated 1 week ago",
       "name": "LFM2.5 is a new family of hybrid models designed for on-device deployment.",
       "description": "Readme Note: this model requires a version of Ollama that’s currently in pre-release. LFM2.5 is a new family of hybrid models designed for on-device deployment. It builds on the LFM2 architecture with extended pre-training and reinforcement learning. Best-in-class performance: A 1.2B model rivaling much larger models, bringing high-quality AI to your pocket. LFM2.5-1.2B-Thinking is a general-purpose text-only model with the following features: Number of parameters: 1.17B Number of layers: 16 (10 double-gated LIV convolution blocks + 6 GQA blocks) Training budget: 28T tokens Context length: 32,768 tokens Vocabulary size: 65,536 Languages: English, Arabic, Chinese, French, German, Japanese, Korean, Spanish Benchmarks We compared LFM2.5-1.2B-Thinking with relevant sub-2B models on a diverse suite of benchmarks. Model GPQA Diamond MMLU-Pro IFEval IFBench Multi-IF GSM8K MATH-500 AIME25 BFCLv3 LFM2.5-1.2B-Thinking 37.86 49.65 88.42 44.85 69.33 85.60 87.96 31.73 56.97 Qwen3-1.7B (thinking) 36.93 56.68 71.65 25.88 60.33 85.60 81.92 36.27 55.41 LFM2.5-1.2B-Instruct 38.89 44.35 86.23 47.33 60.98 64.52 63.20 14.00 49.12 Qwen3-1.7B (instruct) 34.85 42.91 73.68 21.33 56.48 33.66 70.40 9.33 46.30 Granite-4.0-H-1B 24.34 27.64 80.08 24.93 47.56 69.60 47.20 1 50.69 Gemma 3 1B IT 24.24 14.04 63.25 20.47 44.31 42.15 45.20 1 16.64 Llama 3.2 1B Instruct 16.57 20.80 52.37 15.93 30.16 39.04 23.40 0.33 21.44 Write Preview ![image.png](/assets/library/lfm2.5-thinking/0f3b101a-f2ef-4a5c-a0bb-a8edecac35e3) > Note: this model requires a version of Ollama that's currently in pre-release. LFM2.5 is a new family of hybrid models designed for on-device deployment. It builds on the LFM2 architecture with extended pre-training and reinforcement learning. Best-in-class performance: A 1.2B model rivaling much larger models, bringing high-quality AI to your pocket. LFM2.5-1.2B-Thinking is a general-purpose text-only model with the following features: - Number of parameters: 1.17B - Number of layers: 16",
@@ -1740,9 +1740,9 @@
         "tools",
         "vision"
       ],
-      "pulls": 416,
-      "pulls_text": "416 \n  Downloads",
-      "blurb": "kimi-k2.5 Kimi K2.5 is an open-source, native agentic model that seamlessly integrates and language understanding with advanced agentic capabilities, instant and modes, as well as conversational and agentic paradigms. cloud 7, 1 Tag Updated yesterday",
+      "pulls": 10700,
+      "pulls_text": "10.7K \n  Downloads",
+      "blurb": "kimi-k2.5 Kimi K2.5 is an open-source, native agentic model that seamlessly integrates and language understanding with advanced agentic capabilities, instant and modes, as well as conversational and agentic paradigms. cloud 1 Tag Updated 2 days ago",
       "name": "Kimi K2.5 is an open-source, native multimodal agentic model that seamlessly integrates vision and language understanding with advanced agentic capabilities, instant and thinking modes, as well as conversational and agentic paradigms.",
       "description": "Readme Kimi K2.5 is an open-source, native multimodal agentic model built through continual pretraining on approximately 15 trillion mixed visual and text tokens atop Kimi-K2-Base. It seamlessly integrates vision and language understanding with advanced agentic capabilities, instant and thinking modes, as well as conversational and agentic paradigms. Key Features Native Multimodality : Pre-trained on vision–language tokens, K2.5 excels in visual knowledge, cross-modal reasoning, and agentic tool use grounded in visual inputs. Coding with Vision : K2.5 generates code from visual specifications (UI designs, video workflows) and autonomously orchestrates tools for visual data processing. Agent Swarm : K2.5 transitions from single-agent scaling to a self-directed, coordinated swarm-like execution scheme. It decomposes complex tasks into parallel sub-tasks executed by dynamically instantiated, domain-specific agents. Write Preview <img src=\"/assets/library/kimi-k2.5/3e4026fd-dc73-4a59-9322-7f015a92925e\" width=\"180\" /> Kimi K2.5 is an open-source, native multimodal agentic model built through continual pretraining on approximately 15 trillion mixed visual and text tokens atop Kimi-K2-Base. It seamlessly integrates vision and language understanding with advanced agentic capabilities, instant and thinking modes, as well as conversational and agentic paradigms. ### Key Features - **Native Multimodality**: Pre-trained on vision–language tokens, K2.5 excels in visual knowledge, cross-modal reasoning, and agentic tool use grounded in visual inputs. - **Coding with Vision**: K2.5 generates code from visual specifications (UI designs, video workflows) and autonomously orchestrates tools for visual data processing. - **Agent Swarm**: K2.5 transitions from single-agent scaling to a self-directed, coordinated swarm-like execution scheme. It decomposes complex tasks into parallel sub-tasks executed by dynamically instantiated, domain-specific agents. Paste, drop or click to upload im",
       "variants": [
