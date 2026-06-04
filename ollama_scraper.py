@@ -66,8 +66,8 @@ PULLS_RE = re.compile(r"([0-9]+(?:\.[0-9]+)?)([KMB])?\s*Pulls", re.IGNORECASE)
 NUM_ABBR = {"K": 1_000, "M": 1_000_000, "B": 1_000_000_000}
 
 @retry(stop=stop_after_attempt(4), wait=wait_exponential(multiplier=0.75, min=0.5, max=6))
-async def fetch(client: httpx.AsyncClient, url: str) -> str:
-	resp = await client.get(url, timeout=30)
+async def fetch(client: httpx.AsyncClient, url: str, headers: Optional[Dict[str, str]] = None) -> str:
+	resp = await client.get(url, timeout=30, headers=headers)
 	resp.raise_for_status()
 	return resp.text
 
@@ -87,7 +87,9 @@ def parse_search(html: str) -> List[Dict[str, Any]]:
 		if pulls_el:
 			pulls_text_raw = pulls_el.get_text(strip=True)
 			pulls_text = f"{pulls_text_raw} Pulls"
-			match = re.search(r"([0-9]+(?:\.[0-9]+)?)([KMB])?", pulls_text_raw, re.IGNORECASE)
+			# Remove commas for correct numeric parsing (e.g. 3,744 -> 3744)
+			pulls_text_clean = pulls_text_raw.replace(',', '')
+			match = re.search(r"([0-9]+(?:\.[0-9]+)?)([KMB])?", pulls_text_clean, re.IGNORECASE)
 			if match:
 				num = float(match.group(1))
 				abbr = match.group(2)
@@ -121,9 +123,10 @@ def parse_library(html: str, model: Dict[str, Any]) -> None:
 	# Refine pulls/downloads from the library page if search missed it
 	text_all = soup.get_text(' ')
 	if not model.get('pulls'):
-		dl_match = re.search(r"([0-9]+(?:\.[0-9]+)?)([KMB])?\s*(?:Pulls|Downloads)", text_all, re.IGNORECASE)
+		# Allow commas in pull/download counts (e.g. 3,744)
+		dl_match = re.search(r"([0-9,]+(?:\.[0-9]+)?)([KMB])?\s*(?:Pulls|Downloads)", text_all, re.IGNORECASE)
 		if dl_match:
-			num = float(dl_match.group(1))
+			num = float(dl_match.group(1).replace(',', ''))
 			abbr = dl_match.group(2)
 			if abbr:
 				num *= NUM_ABBR.get(abbr.upper(), 1)
@@ -205,13 +208,16 @@ async def scrape_model(client: httpx.AsyncClient, base_info: Dict[str, Any]) -> 
 	return model
 
 async def main(limit: Optional[int] = None, out_path: str = 'out/ollama_models.json'):
-	async with httpx.AsyncClient(headers={'User-Agent': 'Mozilla/5.0 (compatible; OllamaScraper/1.0)'}) as client:
+	async with httpx.AsyncClient(
+		headers={'User-Agent': 'Mozilla/5.0 (compatible; OllamaScraper/1.0)'},
+		follow_redirects=True
+	) as client:
 		base_models = []
 		page = 1
 		while True:
 			url = f"{SEARCH_URL}?page={page}"
 			console.log(f"Fetching search page {page}...")
-			html = await fetch(client, url)
+			html = await fetch(client, url, headers={'HX-Request': 'true'})
 			page_models = parse_search(html)
 			if not page_models:
 				break
