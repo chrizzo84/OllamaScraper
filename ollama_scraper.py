@@ -75,27 +75,31 @@ def parse_search(html: str) -> List[Dict[str, Any]]:
 	soup = BeautifulSoup(html, 'lxml')
 	out = []
 	for a in soup.select('a.group.w-full'):
-		slug_el = a.select_one('[x-test-search-response-title]')
-		if not slug_el:
+		href = a.get('href', '')
+		if '/library/' not in href:
 			continue
-		slug = slug_el.get_text(strip=True).lower()
-		
-		# Pulls
-		pulls_el = a.select_one('[x-test-pull-count]')
+		slug = href.split('/library/')[-1].strip('/').lower()
+		if not slug:
+			continue
+
+		# Pulls - find the metric row whose label span reads "Pulls"
 		pulls_val = None
 		pulls_text = None
-		if pulls_el:
-			pulls_text_raw = pulls_el.get_text(strip=True)
-			pulls_text = f"{pulls_text_raw} Pulls"
-			# Remove commas for correct numeric parsing (e.g. 3,744 -> 3744)
-			pulls_text_clean = pulls_text_raw.replace(',', '')
-			match = re.search(r"([0-9]+(?:\.[0-9]+)?)([KMB])?", pulls_text_clean, re.IGNORECASE)
-			if match:
-				num = float(match.group(1))
-				abbr = match.group(2)
-				if abbr:
-					num *= NUM_ABBR.get(abbr.upper(), 1)
-				pulls_val = int(num)
+		for metric in a.select('span.flex.items-center'):
+			spans = metric.find_all('span', recursive=False)
+			if len(spans) >= 2 and spans[-1].get_text(strip=True).lower() == 'pulls':
+				pulls_text_raw = spans[0].get_text(strip=True)
+				pulls_text = f"{pulls_text_raw} Pulls"
+				# Remove commas for correct numeric parsing (e.g. 3,744 -> 3744)
+				pulls_text_clean = pulls_text_raw.replace(',', '')
+				match = re.search(r"([0-9]+(?:\.[0-9]+)?)([KMB])?", pulls_text_clean, re.IGNORECASE)
+				if match:
+					num = float(match.group(1))
+					abbr = match.group(2)
+					if abbr:
+						num *= NUM_ABBR.get(abbr.upper(), 1)
+					pulls_val = int(num)
+				break
 
 		# Blurb - try to get the description paragraph
 		blurb_el = a.select_one('p.line-clamp-2') or a.select_one('p')
@@ -115,10 +119,13 @@ def parse_search(html: str) -> List[Dict[str, Any]]:
 
 def parse_library(html: str, model: Dict[str, Any]) -> None:
 	soup = BeautifulSoup(html, 'lxml')
-	# Try to find a more robust title
-	title_el = soup.select_one('h1') or soup.find(['h1','h2'])
+	# Try to find a more robust title (the page no longer has an <h1>;
+	# the model slug/name lives in <title> instead)
+	title_el = soup.select_one('h1')
 	if title_el:
 		model['name'] = ' '.join(title_el.get_text(' ').split())
+	elif soup.title and soup.title.get_text(strip=True):
+		model['name'] = soup.title.get_text(strip=True)
 	
 	# Refine pulls/downloads from the library page if search missed it
 	text_all = soup.get_text(' ')
